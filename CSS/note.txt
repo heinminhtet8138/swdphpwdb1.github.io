@@ -1,0 +1,49 @@
+selector {
+    property : value ;
+}
+
+မျက်နှာ {
+    foundation : tona;
+    သနပ်ခါး : ရှင်မထောင်;
+}
+
+hand {
+    skin-care: lotion;
+}
+
+body {
+    color : navy;
+}
+
+Three way to insert CSS
+- Internal CSS 
+- External CSS 
+- Inline CSS
+
+Colors 
+- text (red, yellow, green)
+- Hexadecimal (#FFAA50)
+    - R G B 
+    - 00 00 00
+    - 0-9A-F 0-9A-F 0-9A-F
+    - 0AF91E
+- RGB rgb(0,255,0) - 0 to 255
+- RGBA rgba(red,green,blue,alpha);
+
+Measurement Units
+
+- Absolute Length Unit
+ပုံသေ size ပေါ် မမူတည် 
+Pixels  96px = 1 inch
+Points  72pt = 1 inch
+Picas   12pt = 1pc
+cm      37.795276px = 1 cm
+mm      10mm = 1 cm
+in      1 in = 2.54 cm = 96 px
+
+
+- Relative Length
+Size ပေါ် မူတည်ပြီး ပြောင်း 
+
+% 
+em 16px = 1em

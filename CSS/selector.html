@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            Universal Selector 
+            elements အားလုံးကိုသက်ရောက်စေတယ်။
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            color: red;
+        }
+
+        /* 
+            Element selector
+            tag name တွေ ကို select လုပ်တာ 
+            ကိုယ် select လုပ်တဲ့ element အားလုံးကို သက်ရောက်စေတယ် 
+        */
+        p {
+            color: black;
+        }
+
+        h2 {
+            background-color: black;
+        }
+
+        /* 
+            id selector
+            id attribue ရဲ့ value ကို select လုပ်တာ
+            id attribut ရှိတဲ့ Element ကိုပဲသက်ရောက်စေတယ် 
+        */
+        #selector-lesson {
+            font-size: 50px;
+        }
+
+        /* 
+            class selector
+            class attribute ရဲ့ value ကို select လုပ်တာ 
+            clas attribute ရဲ့  value တူတဲ့ element တိုက်းကိုသက်ရောက်စေတယ်
+        */
+
+        .genernal {
+            color: brown;
+            border: 3px solid black;
+            font-size: 70px;
+        }
+
+        .name-question {
+            color: yellow;
+            background-color: black;
+            font-size: 25px;
+        }
+
+        /* 
+            attribute selector
+        */
+
+        a[title="Google Website"] {
+            font-size: 32px;
+        }
+
+        /* 
+            Descendant Selector 
+            div ထဲ မှ p element အားလုံးကိုသက်ရောက်မယ်
+        */
+
+        div p {
+            background-color: yellow;
+        }
+
+        /* 
+            Child Selector 
+            div ထဲမှာရှိတဲ့ div ရဲ့ child ဖြစ်တဲ့ p elements များကိုသက် နောက် ထပ် element တစ်ခုခြားသွားရင် မသက်ရောက် 
+            
+        */
+
+        div>p {
+            color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h2>Universal Selector</h2>
+    <p>Hello selector</p>
+    <p id="selector-lesson">Selector Lesson</p>
+    <p class="genernal">This is class selector</p>
+    <br>
+    <p class="genernal">I am in Mandalay</p>
+    <p class="name-question">What is your name?</p>
+
+    <a href="" title="Google Website">Google</a>
+    <div>
+        <p>This is paragraph 1.</p>
+        <p>This is paragraph 2.</p>
+        <p>This is paragraph 3.</p>
+        <span>
+            <p>This is paragraph 4.</p>
+        </span>
+        <p>This is paragraph 5.</p>
+    </div>
+
+</body>
+</html>
