@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti non voluptatem dolor praesentium possimus pariatur ipsum, tenetur atque quidem autem distinctio tempora consequatur ea architecto quibusdam magnam quasi quos eius quia accusamus eaque totam mollitia. Commodi distinctio repellat sequi libero obcaecati sunt doloribus labore asperiores nulla, suscipit quasi, cupiditate mollitia veritatis sint? Tempora numquam optio ducimus temporibus ex itaque quae blanditiis placeat debitis, obcaecati omnis ad dicta odit accusamus eaque! Animi dicta soluta natus odit autem praesentium dolore voluptates ad, porro et, provident tempora dolores reiciendis assumenda velit architecto quos ab sint dolorum non alias, numquam enim voluptatem ipsa! Consectetur.
+    </p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <button id="fade-out">FadeOut</button>
+    <button id="fade-in">FadeIn</button>
+    <button id="fade-toggle">FadeToggle</button>
+    <button id="fade-to">FadeTo</button>
+    <button id="fade-to2">FadeTo2</button>
+
+
+    <script src="jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){  
+                $('p').hide('fast',function(){
+                    alert("P tag is hide")
+                });//.hide(speed,callback function)
+            })
+
+            $('#show').click(function(){
+                $('p').show(1000);
+            })
+
+            $('#toggle').click(function(){
+                $('p').toggle(1000);
+            })
+
+            $('#fade-out').click(function(){
+                $('p').fadeOut(1000);
+            })
+
+            $('#fade-in').click(function(){
+                $('p').fadeIn(1000);
+            })
+
+            $('#fade-toggle').click(function(){
+                $('p').fadeToggle(1000);
+            })
+
+            $('#fade-to').click(function(){
+                $('p').fadeTo(1000,0.1);
+            })
+
+            $('#fade-to2').click(function(){
+                $('p').fadeTo(1000,1);
+            })
+
+        })
+    </script>
+</body>
+</html>

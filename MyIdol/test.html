@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Htoo Eain Thin</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="splide/css/splide.min.css">
+    <style>
+        /* for the pen */
+
+
+/* waves */
+.ocean {
+  height: 80px; /* change the height of the waves here */
+  width: 100%;
+  position: absolute;
+  /* bottom: 0; */
+  left: 0;
+  right: 0;
+  overflow-x: hidden;
+}
+
+.wave {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 88.7'%3E%3Cpath d='M800 56.9c-155.5 0-204.9-50-405.5-49.9-200 0-250 49.9-394.5 49.9v31.8h800v-.2-31.6z' fill='%23003F7C'/%3E%3C/svg%3E");
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(2) {
+  bottom: 0;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.5;
+}
+
+.wave:nth-of-type(3) {
+  bottom: 0;
+  animation: wave 20s -1s linear infinite;
+  opacity: 0.5;
+}
+
+@keyframes wave {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(-25%);}
+    100% {transform: translateX(-50%);}
+}
+
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md bg-light shadow py-3">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <div class="waviy">
+                    <span style="--i:1">H</span>
+                    <span style="--i:2">T</span>
+                    <span style="--i:3">O</span>
+                    <span style="--i:4">O</span>
+                    <span style="--i:5"></span>
+                    <span style="--i:6">E</span>
+                    <span style="--i:7">I</span>
+                    <span style="--i:8">N</span>
+                    <span style="--i:9"></span>
+                    <span style="--i:10">T</span>
+                    <span style="--i:11">H</span>
+                    <span style="--i:12">I</span>
+                    <span style="--i:13">N</span>
+
+                </div>
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item fw-bold px-4">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item fw-bold px-4">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item fw-bold px-4">
+                        <a href="#album" class="nav-link">Album</a>
+                    </li>
+                    <li class="nav-item fw-bold px-4">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item fw-bold px-4">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Main Header -->
+        <div class="row my-5">
+            <div class="col-lg-8 mt-5">
+                <h3 class="text-muted">His Name is</h>
+
+                <h1 class="py-3">
+                    <a href="" class="typewrite text-decoration-none text-dark" data-period="2000" data-type='[ "HTOO EIN THIN", "KYAW MYINT LWIN", "ကိုငှက်"]'>
+                      <span class="wrap"></span>
+                    </a>
+                </h1>
+
+                <p>- ဘဝမှာ ချစ်ခြင်းမေတ္တာနဲ့ ဉာဏ်ပညာကို အကြောင်းပြုလို့ ငြိမ်းချမ်းပါစေ ဆန္ဒပြုပါတယ်။</p>
+                <p>- ကိုယ်ခန္ဓာဆိုတာ ချစ်ခြင်းမေတ္တာနဲ့ဉာဏ်ပညာကို သယ်ဆောင်ဖို့အတွက် ယဉ်ရထားမျှသာဖြစ်သည်။</p>
+                <p>ချစ်ခြင်းအားဖြင့် ထူးအိမ်သင်</p>
+            </div>
+            <div class="col-lg-4">
+                <img src="images/header.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+
+        <!-- About -->
+        <div class="row my-5" id="about">
+            <div class="col-lg-5">
+                <img src="images/about.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-7 mt-5 pt-5">
+                <h1>About Of Htoot Ein Thin</h1>
+                <p>Htoo Eain Thin (Burmese: ထူးအိမ်သင်; pronounced [tʰú ʔèiɰ̃ θɪ̀ɰ̃]; born Kyaw Myint Lwin (ကျော်မြင့်လွင်, [tɕɔ̀ mjɪ̰ɰ̃ lwɪ̀ɰ̃]); 1 July 1963 – 14 August 2004) was one of the most popular and respected Burmese singer-songwriters. He brought a new style of pop rock music to the Burmese music scene in mid-1980s,[1] and was popular till his death in 2004. He released 14 solo albums in his 18-year career.[2] His songs remain Burmese standards and his premature death is still mourned by millions of fans.</p>
+                <p>Htoo Eain Thin was born on 1 July 1963 in Pathein in the Irrawaddy Division to a Burman father (Tun Myint) and a Mon mother (Mya Yin). He graduated from Basic Education High School No. 3 Pathein in 1979, and attended Pathein Regional College for two years. In 1981, his entire family moved to Mawlamyaing, and he enrolled in a correspondence course at the University of Mawlamyine, graduating with a Bachelor of Science degree in physics in 1984. After graduation, he studied formal music education under a well known music instructor Aung Soe (KC Francis).[3] Htoo Eain Thin was proficient in playing guitar, bass guitar, piano, harmonica, flute and drums.</p>
+            </div>
+        </div>
+
+        <!-- popular songs -->
+        <div class="row mt-5">
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songOne">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/1.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">ကြယ်တွေဆုံတဲည</h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/2.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">နွေဉီးကံ့ကော် </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/2.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">နွေဉီးကံ့ကော် </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/2.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">နွေဉီးကံ့ကော် </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/2.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">နွေဉီးကံ့ကော် </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/2.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">နွေဉီးကံ့ကော် </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/2.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">နွေဉီးကံ့ကော် </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 my-1">
+                <div class="card btn p-0 bg-dark text-light mb-3" data-bs-toggle="modal" data-bs-target="#songTwo">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="popular-songs/2.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 d-flex align-items-center">
+                        <div class="card-body">
+                          <h5 class="card-title">နွေဉီးကံ့ကော် </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Album -->
+        <div class="row mt-5" id="albums">
+          <div class="offset-md-5 col-md-2">
+            <h1 class="text-center">Album</h1>
+            <hr class="border border-dark mt-0">
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="hovereffect">
+                    <img class="img-responsive" src="album/unplug.jpg" alt="">
+                    <div class="overlay">
+                       <h2 class="mt-5">Unnplugged Live</h2>
+                       <a class="info mt-5" href="#">Play</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="hovereffect">
+                    <img class="img-responsive" src="album/ချစ်ခြင်းအားဖြင့်.jpg" alt="">
+                    <div class="overlay">
+                       <h2 class="mt-5">ချစ်ခြင်းအားဖြင့် </h2>
+                       <a class="info mt-5" href="https://phyuniwarpyar.blogspot.com/2015/04/blog-post_901.html" target="_blank">Play</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="hovereffect">
+                    <img class="img-responsive" src="album/စကားလုံးမရှိတဲ့ကောင်းကင်.jpg" alt="">
+                    <div class="overlay">
+                       <h2 class="mt-5">စကားလုံးမရှိတဲ့ကောင်းကင် </h2>
+                       <a class="info mt-5" href="#">Play</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="hovereffect">
+                    <img class="img-responsive" src="album/နာရီပေါ်မှမျက်ရည်စက်များ.jpeg" alt="">
+                    <div class="overlay">
+                       <h2 class="mt-5">နာရီပေါ်မှမျက်ရည်စက်များ </h2>
+                       <a class="info mt-5" href="#">Play</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="hovereffect">
+                    <img class="img-responsive" src="album/မြို့ပြလရောင်တမ်းခြင်း.jpeg" alt="">
+                    <div class="overlay">
+                       <h2 class="mt-5">မြို့ပြလရောင်တမ်းခြင်း </h2>
+                       <a class="info mt-5" href="https://phyuniwarpyar.blogspot.com/2015/04/blog-post_255.html" target="_blank">Play</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+    </div>
+
+    <!-- R.I.P -->
+    <div class="bg-img py-5 my-5">
+      <div class="text-light text-center py-5">
+        <h3>R.I.P</h3>
+        <h1>Htoo Ein Thin</h1>
+        <h3>1986 - 2004</h3>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5" id="gallery">
+        <div class="offset-md-5 col-md-2">
+          <h1 class="text-center">Gallery</h1>
+          <hr class="border border-dark mt-0">
+        </div>
+      </div>
+
+      <div class="row gird " data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "masonry" }'>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item mb-3">
+          <a href="gallery/1.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/1.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item mb-3">
+          <a href="gallery/2.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/2.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item">
+          <a href="gallery/3.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/3.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item mb-3">
+          <a href="gallery/4.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/4.jpeg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item mb-3">
+          <a href="gallery/5.jpeg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/5.jpeg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item mb-3">
+          <a href="gallery/6.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/6.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item mb-3">
+          <a href="gallery/7.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/7.jpg" class="img-fluid">
+          </a>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 grid-item mb-3">
+          <a href="gallery/8.jpg" data-toggle="lightbox" data-gallery="img-gallery">
+            <img src="gallery/8.jpg" class="img-fluid">
+          </a>
+        </div>
+      </div>
+
+      
+
+    </div>
+
+<!-- SongOne Modal -->
+<div class="modal fade" tabindex="-1" id="songOne">
+    <div class="modal-dialog song-modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body song-modal-body">
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NhWNsja3sPA?si=PtSwhLyek0QF_Rs3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+
+
+<!-- SongTwo Modal -->
+<div class="modal fade" tabindex="-1" id="songTwo">
+    <div class="modal-dialog song-modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-body song-modal-body">
+            <div class="ratio ratio-16x9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Whz2UQbXVLw?si=4K-jNYQ2SDb3uRKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/typewriter.js"></script>
+    <script src="splide/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <script>
+      var splide = new Splide( '.splide', {
+        type   : 'loop',
+        perPage: 5,
+        focus  : 'center',
+      } );
+
+      splide.mount();
+
+    </script>
+
+</body>
+</html>
