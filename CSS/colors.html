@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            padding: 100px;
+            border: 1px solid black;
+        }
+
+        .color1 {
+            /*  
+                Hexa code format
+                0 1 2 3 4 5 6 7 8 9 A B C D E F
+                0 သည်အနည်းဆုံး 
+                F သည်အများဆုံး 
+                RGB - Red Green Blue
+                #0000ff - blue - #00f
+                #00ff00 - green - #0f0
+                #ff0000 - red - #f00
+
+                FF = 15*16 + 15 = 255 (အများဆုံးတန်ဖိုး)
+                CC = 12*16 + 12 = 204
+                88 = 8*16 + 8 = 136
+                00 = 0 (အနည်းဆုံးတန်ဖိုး)
+                #000000 - Black 
+                #FFFFFF - White
+                #FF0000 - Red
+                #00FF00 - Green
+                #0000FF - Blue
+                #888888 - Gray
+
+            */
+            background-color: #00ff00;
+            color: #000;
+        }
+
+        .color2 {
+            /* 
+                RGB/RGBA 
+                0 မှ 255 ထိ
+                rgb(red,green,blue)
+                rgba(red,green,blue,alpha)
+                alpha - 0.0 ကနေ 1.0 ထိ
+            */
+            background-color: rgba(0,0,0,0.5);
+            color: rgb(255,255,255);
+
+            /* color: rgb(255, 0, 0);    Full Red
+            color: rgb(200, 0, 0);    Dark Red
+            color: rgb(150, 0, 0);    Darker Red
+            color: rgb(255, 50, 50);  Light Red */
+
+            /* color: rgb(0, 255, 0);    Full Green
+            color: rgb(0, 200, 0);    Dark Green
+            color: rgb(0, 150, 0);    Darker Green
+            color: rgb(50, 255, 50);  Light Green */
+
+            /* color: rgb(0, 0, 255);    Full Blue */
+            /* color: rgb(0, 0, 200);    Dark Blue */
+            /* color: rgb(0, 0, 150);    Darker Blue */
+            /* color: rgb(50, 50, 255);  Light Blue */
+        }
+
+        .color3 {
+            /* 0deg = to top */
+            background: linear-gradient(0deg, red, blue);
+
+            /* 90deg = to right */
+            /* background: linear-gradient(90deg, red, blue); */
+
+            /* 180deg = to bottom */
+            /* background: linear-gradient(180deg, red, blue); */
+
+            /* 270deg = to left */
+            /* background: linear-gradient(270deg, red, blue); */
+
+            /* 45deg = to top right */
+            /* background: linear-gradient(45deg, red, blue); */
+
+            /* 135deg = to bottom right */
+            /* background: linear-gradient(135deg, red, blue); */
+
+            /* 225deg = to bottom left */
+            /* background: linear-gradient(225deg, red, blue); */
+
+            /* 315deg = to top left */
+            /* background: linear-gradient(315deg, red, blue); */
+        }
+    </style>
+</head>
+<body>
+    <div class="color1">Color 1</div>
+    <div class="color2">Color 2</div>
+    <div class="color3">Color 3</div>
+
+</body>
+</html>
